@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>JavaScript music player</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="audio-container" id="audio-container">
+        <h4 id="title">Massa</h4>
+        <audio src="" id="audio"></audio>
+        <div class="img-container">
+          <img src="images/tushdi-kech.jpg" alt="audio-image" id="cover" />
+        </div>
+
+        <div class="progres-container" id="progres-container">
+          <div class="progres" id="progres"></div>
+        </div>
+
+        <div class="navigation">
+          <button class="btn" id="prev">
+            <i class="fa-solid fa-backward"></i>
+          </button>
+          <button class="btn" id="play">
+            <i class="fa-solid fa-play"></i>
+          </button>
+          <button class="btn" id="next">
+            <i class="fa-solid fa-forward"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- script file -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

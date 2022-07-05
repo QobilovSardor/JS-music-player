@@ -1,0 +1,81 @@
+body {
+  background: linear-gradient(143deg, #e3edfc, #ebf3fb);
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+.audio-container {
+  width: 320px;
+  height: 450px;
+  padding: 40px 25px;
+  margin: 60px 0;
+  /* background: linear-gradient(143deg, #e3edfc, #ebf3fb); */
+  box-shadow: inset 6.61px 6.61px 11px #a4bfd8ad,
+    inset -6.61px -6.61px 11px #fff;
+  border-radius: 20px;
+}
+#title {
+  font-size: 2rem;
+  margin-top: 0;
+  text-align: center;
+  font-family: Popins, sans-serif;
+}
+.img-container {
+  text-align: center;
+}
+.img-container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 10px;
+  object-fit: cover;
+  box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
+    inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0 0 4px rgba(255, 255, 255, 0.2);
+  animation: rotate 5s linear infinite;
+  animation-play-state: paused;
+}
+.progres-container {
+  background: #576ae2;
+  border-radius: 5px;
+  width: 100%;
+  height: 4px;
+  margin: 40px 0 25px;
+}
+.progres {
+  width: 0;
+  height: 100%;
+  background: #fafcff;
+  transition: 0.2s linear;
+}
+.navigation {
+  text-align: center;
+}
+.btn {
+  padding: 1.5rem 1.5rem;
+  border: none;
+  color: #444;
+  background: #e6e7ee;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50%;
+  box-shadow: 7px -7px 14px #cbced1, -7px 7px 14px #fff;
+  margin: 10px;
+}
+.btn:nth-child(2) {
+  background: #576ae2;
+  color: #fff;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
